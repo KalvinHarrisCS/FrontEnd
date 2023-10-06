@@ -1,0 +1,159 @@
+/* Header and Footer */
+.header, .footer {
+  background: linear-gradient(180deg, #008cba, #005f87);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1, .footer h1 {
+  margin: 0;
+}
+.header-center, .header-right {
+  display: inline-block;
+}
+
+.header-center {
+  width: 80%;
+}
+
+.header-right {
+  width: 20%;
+  text-align: right;
+}
+
+/* Main App Structure */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #ddd;
+}
+
+/* Person */
+.person {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.person:hover {
+  background-color: #eef;
+}
+
+.person.selected {
+  background-color: #ddd;
+}
+
+.person.bot.selected {
+  background-color: #bdf;
+}
+
+.bot {
+  font-style: italic;
+  color: #008cba;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  align-items: flex-start;  /* Align children to the start of the flex container */
+  padding: 20px;
+  height: calc(100vh - 40px);
+ 
+}
+.main-content.bot-selected {
+  background-color: #e0f7fa; /* Sample background color for when a bot is selected */
+}
+
+/* Chat Section */
+.chat-section {
+  flex: 2;  /* Takes up 2/3 of the available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.chat-section h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Text Bar */
+.text-bar {
+  width: 80%;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+/* Actions Panel */
+.actions-panel {
+  flex: 1;  /* Takes up 1/3 of the available space */
+  border-left: 1px solid #ddd; 
+  padding: 10px;
+  overflow-y: auto;  /* Adds scrolling if the content overflows */
+  height: 100%;
+}
+.actions-panel p {
+  margin: 0;
+}
+.tone-selector {
+  margin: 10px 0;
+}
+
+.actions-header {
+  background-color: #f0f0f0;
+  color: #000;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Tone Selector & Textarea */
+.tone-selector label, .tone-selector select {
+  margin-right: 10px;
+}
+.actions-panel p {
+  margin: 0;
+}
+
+.content-textarea {
+  width: 100%;
+  height: 150px; /* Or whatever height you prefer */
+  margin-bottom: 20px; /* Added margin for spacing */
+  resize: vertical; /* User can resize vertically only */
+}
+
+/* Futuristic Section */
+.futuristic-section {
+  background-color: #1a1a2e;
+  color: #eee;
+  padding: 40px;
+  text-align: center;
+  background-image: url('./pngtree-blue-artificial-intelligence-technology-ai-robot-banner-image_196890.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.futuristic-section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
